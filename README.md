@@ -123,7 +123,7 @@ $items[] = [
     'UnitPrice' => $orderproduct['price']
 ];
 
-$salesInvoice = new SalesInvoice($this->connection());
+$salesInvoice = new SalesInvoice($connection);
 $salesInvoice->InvoiceTo = $customer_code;
 $salesInvoice->OrderedBy = $customer_code;
 $salesInvoice->YourRef = $orderId;
